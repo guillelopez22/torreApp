@@ -6,12 +6,29 @@ h3 {
 	border-radius: 15px;
 }
 
+.rad-border {
+    color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(255, 255, 255);
+    background-color: #343a40;
+    border-radius: 8px;
+}
+
+.inner-border {
+    color: white;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: thin;
+    background-color: #343a40;
+}
 .border {
     border-style: solid;
     border: thin;
     background-color: #343a40;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
+
 
 
 
