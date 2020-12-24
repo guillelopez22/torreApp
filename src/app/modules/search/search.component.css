@@ -1,0 +1,24 @@
+h3 {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.tab-title {
+    color: white;
+    /* background-color: #CDDC39; */
+}
+
+.nav-tabs .nav-item .nav-link {
+    background-color: black;
+    color: #FFF;
+    border: none;
+    border-bottom-color: white;
+  }
+
+ .nav-tabs .nav-item .nav-link.active {
+    color: #CDDC39;
+    background-color: black;
+    border-bottom-color: #CDDC39;
+  }
+ 

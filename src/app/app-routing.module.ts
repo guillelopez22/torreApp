@@ -6,7 +6,6 @@ import { GenomeComponent } from './modules/genome/genome.component';
 
 
 const routes: Routes = [
-  { path: '',   redirectTo: 'search', pathMatch: 'full' },
   { path: 'search', component: SearchComponent },
   { path: 'job/:jobId', component: JobProfileComponent },
   { path: 'genome/genomeId', component: GenomeComponent },
