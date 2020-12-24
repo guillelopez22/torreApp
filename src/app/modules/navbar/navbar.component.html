@@ -6,30 +6,27 @@
       <h1>torre</h1>
       <span class="menu-spacer"></span>
       <div>
-        <a mat-button [routerLink]="'/search'"> Search </a>
-        <a mat-button [routerLink]="'/create-account'"> Genome </a>
-        <a mat-button [routerLink]="'/contacts'"> Jobs </a>
+        <a mat-button [routerLink]="'/search'"> <mat-icon>search</mat-icon>Search</a>
+        <!-- <a mat-button [routerLink]="'/genome'"> <mat-icon>person</mat-icon>Genome</a>
+        <a mat-button [routerLink]="'/jobs'"><mat-icon>work</mat-icon>Jobs</a> -->
       </div>
     </mat-toolbar-row>
-  
-    <mat-toolbar-row>
-        <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
-      </mat-toolbar-row>
+
   </mat-toolbar>
   <mat-sidenav-container>
     <mat-sidenav #sidenav>
       <mat-nav-list>
   
-        <a mat-list-item [routerLink]="'/accounts'"> Search </a>
-        <a mat-list-item [routerLink]="'/create-account'"> Genome </a>
-        <a mat-list-item [routerLink]="'/contacts'"> Jobs </a>
+        <a mat-list-item [routerLink]="'/search'"> <mat-icon>search</mat-icon>Search</a>
+        <!-- <a mat-list-item [routerLink]="'/genome'"> <mat-icon>person</mat-icon>Genome</a>
+        <a mat-list-item [routerLink]="'/jobs'"><mat-icon>work</mat-icon>Jobs</a> -->
         <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
   
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
       <div style="height: 88vh;">
-  
+
         <router-outlet></router-outlet>
       </div>
     </mat-sidenav-content>

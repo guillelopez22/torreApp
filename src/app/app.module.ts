@@ -11,12 +11,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { JobProfileComponent } from './modules/job-profile/job-profile.component';
+import { GenomeComponent } from './modules/genome/genome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    JobProfileComponent,
+    GenomeComponent
   ],
   imports: [
     BrowserModule,
