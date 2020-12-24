@@ -8,6 +8,7 @@ import { SearchComponent } from './modules/search/search.component';
 import { NavbarComponent } from './modules/navbar/navbar.component';
 import { JobProfileComponent } from './modules/job-profile/job-profile.component';
 import { GenomeComponent } from './modules/genome/genome.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { GenomeComponent } from './modules/genome/genome.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

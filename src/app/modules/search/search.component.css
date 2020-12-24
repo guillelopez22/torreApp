@@ -4,6 +4,12 @@ h3 {
     font-weight: 400;
     letter-spacing: 0;
 }
+
+.border {
+	border-style: solid;
+	border-radius: 15px;
+}
+
 .tab-title {
     color: white;
     /* background-color: #CDDC39; */
@@ -19,7 +25,11 @@ h3 {
  .nav-tabs .nav-item .nav-link.active {
     color: #CDDC39;
     background-color: black;
-    border-bottom-color: #CDDC39;
+    border-bottom-color: #CDDC39!important;
+  }
+
+  .nav-link {
+	  border-bottom: 1px solid white!important;
   }
 
   
