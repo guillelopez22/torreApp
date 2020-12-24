@@ -1,3 +1,4 @@
+{{list | json}}
 <div class="container h-100 w-100">
     <div class="row h-100 align-items-center">
         <div class="col-3 text-center">
@@ -11,24 +12,24 @@
                 <div class="col-12 border">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link active" data-toggle="tab">People</a>
+                            <a href="#people" class="nav-link active" data-toggle="tab">People</a>
                         </li>
                         <li class="nav-item tab-title">
-                            <a href="#profile" class="nav-link" data-toggle="tab">Jobs</a>
+                            <a href="#job" class="nav-link" data-toggle="tab">Jobs</a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" id="home">
+                        <div class="tab-pane fade show active" id="people">
                             <form action="" class="search-bar">
-                                <input type="search" name="search" pattern=".*\S.*" required>
+                                <input type="text" name="people" pattern=".*\S.*" required>
                                 <button class="search-btn" type="submit">
                                     <span>Search</span>
                                 </button>
                             </form>
                         </div>
-                        <div class="tab-pane fade" id="profile">
+                        <div class="tab-pane fade" id="job">
                             <form action="" class="search-bar">
-                                <input type="search" name="search" pattern=".*\S.*" required>
+                                <input type="text" name="jobs" pattern=".*\S.*" required >
                                 <button class="search-btn" type="submit">
                                     <span>Search</span>
                                 </button>
@@ -39,5 +40,10 @@
             </div>
         </div>
     </div>
+</div>
 
+<div class="container-fluid">
+    <div class="row">
+
+    </div>
 </div>

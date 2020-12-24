@@ -7,15 +7,29 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./genome.component.css']
 })
 export class GenomeComponent implements OnInit {
+  userData = {
+    professionalHeadline: '',
+    name: '',
+    pictureThumbnail: '',
+    links: [],
+    location: {
+      shortName: '',
+      country: '',
+      timezone: '',
+    },
+    interests: []
 
+  };
+  
   constructor(
     private peopleService: PeopleService,
     private activatedRoute: ActivatedRoute
-  ) { }
-
+    ) { }
+    
   ngOnInit(): void {
-    this.peopleService.getUser(this.activatedRoute.snapshot.params.userId).subscribe(data => {
+    this.peopleService.getUser(this.activatedRoute.snapshot.params.userId).subscribe((data:any) => {
       console.log(data);
+      this.userData = data.person;
     })
   }
 
